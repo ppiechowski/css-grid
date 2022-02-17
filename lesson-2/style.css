@@ -1,0 +1,70 @@
+body {
+    color: black;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+nav{
+    background-color: rgba(128, 128, 128, 0.479) ;
+    padding: 0px 50px;
+}
+
+nav ul{
+    list-style-type:none;
+    padding-inline-start: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display:block;  
+    padding: 5px;
+}
+
+/* @up how make width block depending on the length of the word? */
+
+
+nav a:hover{
+    color: rgba(0, 0, 0, 0.726);
+}
+
+@media screen and (min-width: 1000px) {
+    
+    #content {
+        width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    section {
+        background-color: red;
+    }
+
+    nav ul{
+        display: flex;
+        /* justify-content: flex-start; */
+        align-items:center;
+    }
+
+    nav li{
+        flex: 1 1 0;
+    }
+}
+
+#content {
+    display: grid;
+    /* grid-template-columns: 30% 20% 50%; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, minimax(150px, auto));
+    grid-auto-rows: 200px;
+    max-width: 768px;
+    margin: 0 auto;
+    /* grid-gap: 10px; */
+    
+    /* align-items: center; */
+}

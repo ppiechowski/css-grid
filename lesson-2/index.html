@@ -1,85 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Using CSS Grid</title>
-	<style>
-		body {
-			color: #fff;
-			font-family: 'Nunito Semibold';
-			text-align: center;
-		}
-
-		#content {
-			display: grid;
-			/* grid-template-columns: 30% 20% 50%; */
-			/* grid-template-columns: 1fr 2fr 1fr; */
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(1, minimax(150px, auto));
-			grid-auto-rows: 200px;
-			max-width: 768px;
-			margin: 0 auto;
-			grid-gap: 10px;
-			
-			/* align-items: center; */
-
-
-		}
-
-		#content div {
-			background: #3bbced;
-			padding: 30px;
-
-		}
-
-		#content div:nth-child(even) {
-			background: #777;
-			padding: 30px;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<title>14th International Symposium SYMKOM 2020/2021 IMP2</title>
 </head>
 
 <body>
-
+	<nav>
+		<ul>
+			<li><a href="">Scope</a></li>
+			<li><a href="">Key Dates</a></li>
+			<li><a href="">Venue</a></li>
+			<li><a href="">Invited Speakers</a></li>
+			<li><a href="">Committees</a></li>
+			<li><a href="">Registration Fee</a></li>
+			<li><a href="">Registration Form</a></li>
+			<li><a href="">Hotels</a></li>
+			<li><a href="">Map</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Call for Papers</a></li>
+			<li><a href="">Conference  Programme</a></li>
+			<li><a href="">YRC Winners</a></li>
+		</ul>
+	</nav>
+	
 	<div id="content">
-		<header>Header
-			<nav>
-				Navigation ul & li
-			</nav>
-		</header>
-		<main>Hero</main>
-		<section>Main</section>
-		
-		<section>Scope</section>
-		<section>Scope</section>
-		<section>Key-dates</section>
-		<section>Venue</section>
-		<section>Invited Speakers</section>
-		<section>Papers</section>
-		<section>Committees</section>
-		<section>Registration-fee</section>
-		<section>Registration-form</section>
-		<section>Recommended-hotels</section>
-		<section>Map</section>
-		<section>Co-organizers</section>
-		<section>Patronage</section>
+		<header>Header</header>
+		<section id="Main">Main</section>
+		<section id="Scope">Scope</section>
+		<section id="Key-dates">Key-dates</section>
+		<section id="Venue">Venue</section>
+		<section id="Invited-Speakers">Invited Speakers</section>
+		<section id="Papers">Papers</section>
+		<section id="Committees">Committees</section>
+		<section id="Registration-fee">Registration-fee</section>
+		<section id="Registration-form">Registration-form</section>
+		<section id="Hotels">Recommended-hotels</section>
+		<section id="Map">Map</section>
+		<section id="Co-organizers">Co-organizers</section>
+		<section id="Patronage">Patronage</section>
 		<footer>Footer</footer>
-
-
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
-		<div>4</div>
-		<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel aut voluptate sequi nisi! Modi recusandae
-			atque soluta itaque qui, rerum magni quia illo enim necessitatibus vel omnis fugiat consequatur. Nobis.
-		</div>
-		<div>6</div>
-		<div>7</div>
-		<div>8</div>
-		<div>9</div>
-		<div>10</div>
-		<div>11</div>
-		<div>12</div>
 
 	</div>
 
